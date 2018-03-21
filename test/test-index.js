@@ -3,7 +3,7 @@ const chaiHttp = require('chai-http');
 
 const expect = chai.expect;
 
-const {app, runServer, closeServer} = require('../server');
+const {app, runServer, closeServer} = require('../index');
 
 chai.use(chaiHttp);
 
@@ -36,9 +36,9 @@ describe('Blog Posts', function() {
 
   it('should add a blog post on POST', function() {
     const newPost = {
-      title: 'Lorem ip some',
-      content: 'foo foo foo foo',
-      author: 'Emma Goldman'
+      title: 'new Blogpost added ',
+      content: 'Blogpost content',
+      author: 'Bhakti'
     };
     const expectedKeys = ['id', 'publishDate'].concat(Object.keys(newPost));
 

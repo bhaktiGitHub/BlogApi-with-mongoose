@@ -8,6 +8,7 @@ const jsonParser = bodyParser.json();
 const {BlogPosts} = require('./model');
 
 BlogPosts.create('my first blogpost', 'blah blah' , 'bhakti');
+BlogPosts.create('my second blogpost', 'blogpost 2' , 'bhakti');
 
 
 router.get('/', (req, res) => {
