@@ -1,2 +1,8 @@
-language: node_js
-node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: Rx/OYiavmv4tXdxr45LK8Ym3u8iRRNPGjMXd4TRYza4+RJnwlVasYx0gx/BovQUamhCETfKolMIINmby7envHBiAdtJeNB2sHfqIN6mWTKdcOBScYmmUALUC7CyM0Omv7cssXq1Bz9wBKNUzO2iJspXPyW+sL6NubsmlihP1fjlK+lZ0cgneVCyakyFtzd0uVU6RBvBXXcoxM2Q7NYP2dvL8f1qG4I6Smvhghi5XE7/Tz4masFsxgsn574IhC2mhfDr+pprTkWcavyNaqFoS1R9PFaqKULOx1EFDAaeTfDTarmv4K+7DdTOuZmV+eoJ5CE1Y9lk8EKIrD+M3wttBadlNdKqQMicYbmijT68kT50GDNST1hW0TWOgBTuVPQakhH02RMmOe9ki32GxbDf6QYwwq/8g/pux34OFcZ1C+yBzka/+MnhjrUd19vuS+d/QEoIe8ILBw6CprEUuslaNQgNyNTtO1MWhlxGdmwjY6jKlHmm32qDCrw3qKKBAQwR/XLJuFugCh8/dxPUY9YyYhvtvwR9die5sZUOEH7c91CMnV4xI9pdlJSc2tZfq0ArrWujWhXk2ocrNnQ9nBC3bj/Xy0lvPlrGeGNQrlPukXM+s5kqykb0gG4DEcYRQcp555RLVYskwT7jYV5XqZfqws27D/XTEoMgkmitboVLTLcI=
+  app: safe-stream-64559
+https://safe-stream-64559.herokuapp.com/ | https://git.heroku.com/safe-stream-64559.git
+  on:
+    repo: bhaktiGitHub/node-shopping-list-integration-tests

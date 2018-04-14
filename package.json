@@ -4,7 +4,7 @@
   "description": "",
   "main": "model.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "author": "",
   "license": "ISC",
