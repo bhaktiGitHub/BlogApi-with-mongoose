@@ -6,15 +6,12 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const app = express();
 
+
 app.use(morgan('common'));
 
 const blogRouter = require('./blogRouter');
 app.use('/blog-posts', blogRouter);
 
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
-});
 
 
 let server;
